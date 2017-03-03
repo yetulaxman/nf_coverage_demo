@@ -57,7 +57,7 @@ process plot {
     '''
     #!/usr/bin/env Rscript
     pdf("coverage.pdf")
-    hist(read.table("all_average.txt")[,1])
+    hist(read.table("all_average.txt")[,1],col="pink")
     dev.off()
     '''
 }
