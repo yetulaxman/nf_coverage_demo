@@ -56,7 +56,7 @@ process plot {
     shell:
     '''
     #!/usr/bin/env Rscript
-    libray(ggplot2)
+    library(ggplot2)
     pdf("coverage.pdf")
     data=read.table("all_average.txt")
     ggplot(data, aes(x=V1)) + geom_histogram(aes(y=..density..), colour="black", fill="grey") + geom_density(alpha=.2, fill="#FF6666")
