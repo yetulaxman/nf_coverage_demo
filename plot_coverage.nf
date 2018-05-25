@@ -59,7 +59,7 @@ process plot {
     library(ggplot2)
     pdf("coverage.pdf")
     data=read.table("all_average.txt")
-    ggplot(data, aes(x=V1)) + geom_histogram(aes(y=..density..), colour="black", fill="grey") + geom_density(alpha=.2, fill="#FF6666")
+    ggplot(data, aes(x=V1)) + geom_histogram(aes(y=..density..), colour="black", fill="grey") + geom_density(alpha=.2, fill="#FF6666") + labs(x = "Mean Depth")
     dev.off()
     '''
 }
