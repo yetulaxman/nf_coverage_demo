@@ -1,0 +1,7 @@
+name: nf_coverage_demo
+channels:
+  - bioconda
+dependencies:
+  - bedtools
+  - r-ggplot2
+  
