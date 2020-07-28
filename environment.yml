@@ -1,7 +1,9 @@
 name: nf_coverage_demo
 channels:
+  - conda-forge
   - bioconda
+  - defaults
 dependencies:
-  - bedtools
-  - r-ggplot2
+  - bedtools=2.29.2-0
+  - r-ggplot2=3.1.1
   
